@@ -1,0 +1,28 @@
+^C:\MY DRIVE\MOBILE_APP_WEEK_4\BUILD\WINDOWS\X64\CMAKEFILES\0FA83679EDE4B9055F7CE1E674881F8D\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\My Drive\V Commu\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\kungm\AppData\Local\flutter "PROJECT_DIR=C:\My Drive\mobile_app_week_4" FLUTTER_ROOT=C:\Users\kungm\AppData\Local\flutter "FLUTTER_EPHEMERAL_DIR=C:\My Drive\mobile_app_week_4\windows\flutter\ephemeral" "PROJECT_DIR=C:\My Drive\mobile_app_week_4" "FLUTTER_TARGET=C:\My Drive\mobile_app_week_4\lib\main.dart" DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\My Drive\mobile_app_week_4\.dart_tool\package_config.json" C:/Users/kungm/AppData/Local/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\MY DRIVE\MOBILE_APP_WEEK_4\BUILD\WINDOWS\X64\CMAKEFILES\5818B3837CB03100167E5BA755CA2A46\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\MY DRIVE\MOBILE_APP_WEEK_4\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\My Drive\V Commu\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/My Drive/mobile_app_week_4/windows" "-BC:/My Drive/mobile_app_week_4/build/windows/x64" --check-stamp-file "C:/My Drive/mobile_app_week_4/build/windows/x64/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

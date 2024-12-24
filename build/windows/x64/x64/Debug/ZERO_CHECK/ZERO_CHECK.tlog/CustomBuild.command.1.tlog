@@ -1,0 +1,10 @@
+^C:\MY DRIVE\MOBILE_APP_WEEK_4\BUILD\WINDOWS\X64\CMAKEFILES\D1568DC9549302483261812B8F87D002\GENERATE.STAMP.RULE
+setlocal
+"C:\My Drive\V Commu\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/My Drive/mobile_app_week_4/windows" "-BC:/My Drive/mobile_app_week_4/build/windows/x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/My Drive/mobile_app_week_4/build/windows/x64/mobile_app_week_4.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
